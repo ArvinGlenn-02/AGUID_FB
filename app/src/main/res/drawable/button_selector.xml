@@ -1,0 +1,11 @@
+<!-- res/drawable/button_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button color when pressed (tapped) -->
+    <item android:state_pressed="true" android:color="@color/teal_200" /> <!-- Replace with your desired color -->
+
+    <!-- Button color when active (focused) -->
+    <item android:state_focused="true" android:color="@color/purple_200" /> <!-- Replace with your desired color -->
+
+    <!-- Default button color -->
+    <item android:color="@color/black" /> <!-- Replace with your default color -->
+</selector>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#18191A"
+    tools:context=".MainActivity">
+
+    <!-- Facebook Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#18191A"
+        android:layout_marginTop="15dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal">
+
+        <!-- Facebook Text on the Left -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="facebook"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <!-- Icons on the Right -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="center"
+            android:layout_marginEnd="12dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search"
+            android:layout_marginEnd="12dp"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_messenger"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="6"
+        android:padding="5dp"
+        android:paddingLeft="0dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment1btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showNewsFeedFragment"
+            app:icon="@drawable/ic_home"
+            app:iconTint="@color/white"
+            app:iconSize="40dp"
+            app:cornerRadius="8dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment2btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showNotificationFragment"
+            app:icon="@drawable/ic_video"
+            app:iconTint="@color/white"
+            app:iconSize="40dp"
+            app:cornerRadius="8dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment3btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showMarketPlaceFragment"
+            app:icon="@drawable/ic_marketplace"
+            app:iconSize="40dp"
+            app:iconTint="@color/white"
+            app:cornerRadius="8dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment4btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showNotificationFragment"
+            app:icon="@drawable/ic_notifications"
+            app:iconTint="@color/white"
+            app:iconSize="40dp"
+            app:cornerRadius="8dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment5btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showVideoFragment"
+            app:icon="@drawable/ic_gaming"
+            app:iconTint="@color/white"
+            app:iconSize="40dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment6btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#18191A"
+            android:onClick="showMenuFragment"
+            app:icon="@drawable/ic_menu"
+            app:iconSize="40dp"
+            app:iconTint="@color/white"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+    <!-- FrameLayout for Fragments -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+</LinearLayout>

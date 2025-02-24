@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".GamingFragment">
+
+    <!-- Vertical LinearLayout to hold all rectangles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Rectangle 1 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FF5722" />
+
+        <!-- Rectangle 2 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginBottom="16dp"
+            android:background="#4CAF50" />
+
+        <!-- Rectangle 3 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginBottom="16dp"
+            android:background="#2196F3" />
+
+        <!-- Rectangle 4 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFC107" />
+
+        <!-- Rectangle 5 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginBottom="16dp"
+            android:background="#E91E63" />
+
+        <!-- Rectangle 6 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:background="#00BCD4" />
+
+        <!-- TextView at the bottom -->
+    </LinearLayout>
+</ScrollView>
